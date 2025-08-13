@@ -1,0 +1,463 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+@font-face {
+  font-family: "helvetica_lt_geo_roman";
+  src: url(/assets/fonts/HELVETICA_NEUE_LT_GEO_55_ROMAN.TTF);
+}
+
+@font-face {
+  font-family: "helvetica_lt_geo_bold";
+  src: url(/assets/fonts/HELVETICA_NEUE_LT_GEO_75_BOLD.TTF);
+}
+
+@font-face {
+  font-family: "helvetica_lt_geo_medium";
+  src: url(/assets/fonts/HELVETICA_NEUE_LT_GEO_65_MEDIUM.TTF);
+}
+
+@font-face {
+  font-family: "mersad2";
+  src: url(/assets/fonts/Mersad-26958361069.ttf);
+}
+
+/* Webfont: Mersad-Medium */@font-face {
+    font-family: 'Mersad';
+    src: url('/assets/fonts/Mersad/WebPS/MersadRegular.woff2') format('woff2'), /* Modern Browsers */
+    url('/assets/fonts/Mersad/WebPS/MersadRegular.otf') format('opentype'); /* Safari, Android, iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Mersad-Thin */@font-face {
+    font-family: 'MersadThin';
+    src: url('/assets/fonts/Mersad/WebPS/MersadThin.woff2') format('woff2'), /* Modern Browsers */
+    url('/assets/fonts/Mersad/WebPS/MersadThin.otf') format('opentype'); /* Safari, Android, iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Mersad-Bold */@font-face {
+    font-family: 'MersadBold';
+    src: url('/assets/fonts/Mersad/WebPS/MersadBold.woff2') format('woff2'), /* Modern Browsers */
+         url('/assets/fonts/Mersad/WebPS/MersadBold.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Mersad-Black */@font-face {
+    font-family: 'MersadBlack';
+    src: url('/assets/fonts/Mersad/WebPS/MersadBlack.woff2') format('woff2'), /* Modern Browsers */
+         url('/assets/fonts/Mersad/WebPS/MersadBlack.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    
+    
+}
+    
+html, body{
+    font-family: "mersad";
+  height: 100%;
+  position: relative;
+  
+}
+body{
+  color: #0D1E33;
+  overflow-x: hidden;
+}
+
+
+
+
+*::after,
+*::before {
+    position: absolute;
+    content: "";
+}
+
+/* removes spacing between cells in tables */
+table {
+    border-collapse: collapse;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+img, svg, video, canvas, audio, iframe, embed, object {
+  display: block;
+  vertical-align: middle;
+}
+
+
+a{
+  text-decoration: none;
+  
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: #707070;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 6px;
+  height: 6px;
+  background-color: black;
+}
+
+
+button{
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.container{
+    margin: auto;
+    max-width: calc(1484px + 2rem);
+    position: relative;
+    
+    
+  }
+
+  .main-padding{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  
+
+  
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+    
+  }
+
+  .swiper-slide {
+    
+    
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    
+   
+  }
+
+  .header{
+    
+    position: relative;
+   
+  }
+
+  .lang-switcher{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  .lang-switcher li a{
+    color: #0D1E33;
+    opacity: 0.5;
+    font-weight: bold;
+    font-size: 0.875rem;
+  }
+
+  .lang-switcher li a.active{
+    opacity: 1;
+  }
+
+  .switch {
+  position: relative;
+  display: inline-block;
+  width: 41px;
+  height: 19px;
+}
+
+.switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  -webkit-transition: .4s;
+  transition: .4s;
+  border: 1px solid #AFD0EA;
+}
+
+.switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #00A5EF;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.switch .slider.round {
+  border-radius: 34px;
+}
+
+.switch .slider.round:before {
+  border-radius: 50%;
+}
+
+.header .content{
+  display: flex;
+  
+  align-items: center;
+  gap: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.header .nav{
+  display: flex;
+  gap: 2rem;
+}
+
+.language-container{
+  margin-left: auto;
+}
+
+a{
+  color: #0D1E33
+}
+
+.header .nav a.active{
+  color: #00A5EF;
+}
+
+.gradient-background{
+  background-color: #6FCAF3;
+  position: relative;
+}
+
+.gradient-background .gradient{
+  background: #6FCAF3;
+background: -webkit-linear-gradient(11deg, rgba(111, 202, 243, 1) 0%, rgba(111, 202, 243, 1) 50%, rgba(252, 252, 244, 1) 100%);
+background: -moz-linear-gradient(11deg, rgba(111, 202, 243, 1) 0%, rgba(111, 202, 243, 1) 50%, rgba(252, 252, 244, 1) 100%);
+background: linear-gradient(11deg, rgba(111, 202, 243, 1) 0%, rgba(111, 202, 243, 1) 50%, rgba(252, 252, 244, 1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6FCAF3", endColorstr="#FCFCF4", GradientType=0);
+height: 100%;
+width: 100%;
+position: absolute;
+top: 0;
+
+}
+
+
+.btn{
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  
+  width: fit-content;
+  text-align: center;
+  cursor: pointer;
+  padding: 0 1rem;
+  min-width: 240px;
+  
+}
+
+.main-btn{
+  background-color: #00A5EF;
+  color: #F7F6DB;
+  min-height: 67px;
+}
+
+
+.section{
+  position: relative;
+}
+
+.section-title{
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-bottom: 0.25rem;
+}
+
+
+
+
+
+
+.text{
+  line-height: 1.5;
+}
+
+
+.relative{
+  position: relative;
+}
+
+
+
+
+
+.img{
+  position: relative;
+  overflow: hidden;
+}
+
+.main-slider-section .background{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  pointer-events: none;
+}
+
+.main-slider-section .background > div{
+  flex: 0 0 50%;
+  width: 50%;
+  position: relative;
+}
+
+.main-slider-section .background > div img{
+  width: 100%;
+  height: auto;
+  
+}
+
+.main-slider-section .background > div:first-child img{
+  
+  mix-blend-mode:screen
+}
+
+.main-slider-section .background.over{
+  z-index: 2;
+}
+.main-slider-section .background.over > div:last-child img{
+  position: absolute;
+  width: 58%;
+  top: 45.7%;
+  left: 28%;
+}
+
+.main-slide {
+  display: flex;
+}
+.main-slide > div {
+  flex: 0 0 50%;
+  width: 50%;
+}
+
+.main-slide .title{
+  font-family: 'MersadBlack';
+  font-size: 3.75rem;
+}
+
+.main-slide .text{
+  padding: 2rem 0;
+}
+
+.main-slide .img{
+  
+}
+
+.small-title {
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.big-title {
+  font-size: 2.188rem;
+  font-family: 'MersadBlack';
+  text-align: center;
+}
+
+.home-products-section .big-title{
+  margin: 1.5rem 0;
+}
+
+.product-list{
+  display: grid;
+}
+
+.home-products-section .product-list{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: -15px;
+}
+.home-products-section .product-list > div{
+  flex: 0 0 25%;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+
+.product-item {
+    display: block;
+  
+    background-color: white;
+    border-radius: 1.8rem;
+    padding: 1.5rem;
+    height: 100%;
+    
+    transition: all 0.2s;
+    position: relative;
+    max-width: 355px;
+}
+
+.product-item .img {
+    padding-top: 88%;
+}
+.product-item .img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    top: 0;
+    left: 0;
+    transition: all 0.2s;
+}
+
+.product-item .title{
+  font-weight: bold;
+  text-align: center;
+}
+
+.product-item .arrow{
+  position: absolute;
+  bottom: 1.1rem;
+  right: 1.2rem;
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.product-item:hover {
+  background-color: #00A5EF;
+}
+.product-item:hover .arrow {
+  opacity: 1;
+}
