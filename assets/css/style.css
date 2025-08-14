@@ -470,7 +470,7 @@ top: 0;
 
 .home-products-section .btn-container{
   justify-items: center;
-
+margin-top: 3rem;
 }
 
 .home-about-section{
@@ -784,4 +784,91 @@ margin-top: 1rem;
 .home-news-section .btn-container {
     justify-items: center;
     margin-top: 3rem;
+}
+
+.home-contact-info-section{
+  padding-top: 4rem;
+
+  background-color: #E2F3F4;
+
+  padding-bottom: 10%;
+  overflow: hidden;
+}
+
+.home-contact-info-section .big-title{
+  margin: 1.5rem 0 2rem 0;
+}
+
+.home-contact-info-section .bg{
+ position: absolute;
+ bottom: 0;
+}
+
+.home-contact-info-section .bg img{
+  opacity: 0.25;
+  width: 100%;
+  height: auto;
+  
+}
+
+.contact-info-box{
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 1.5rem;
+  
+backdrop-filter: blur(15px);
+border: 1px solid rgba(255, 255, 255, 0.25);;
+padding: 1rem;
+}
+
+.contact-info{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 3rem;
+  justify-items: center;
+}
+
+
+.contact-info li{
+  max-width: 20rem;
+}
+
+.contact-info li .title{
+  opacity: 0.3;
+  margin-top: 1rem;
+}
+
+.contact-info li a{
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.375rem;
+  line-height: 1.5;
+}
+
+.footer{
+  background-color: #0D1E33;
+  padding: 3rem 0;
+}
+
+.footer .nav {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.footer .nav a{
+  color: white;
+  font-size: 1.375rem;
+}
+
+.social-title{
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.social-icons{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 2rem;
 }
