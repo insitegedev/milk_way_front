@@ -921,3 +921,31 @@ padding: 1rem;
   max-width: 1000px;
   margin: 2rem auto 0 auto;
 }
+
+.gradient-background.product{
+  background-color: transparent;
+}
+.gradient-background.product .gradient{
+  display: none;
+}
+.breadcrumb{
+  display: flex;
+  gap: 1rem;
+}
+.breadcrumb li{
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+.breadcrumb li a{
+  
+  color: #0D1E33;
+  opacity: 0.3;
+  
+}
+.breadcrumb li:last-child a{
+  
+  
+  opacity: 1;
+  
+}
