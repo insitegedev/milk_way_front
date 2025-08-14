@@ -949,3 +949,69 @@ padding: 1rem;
   opacity: 1;
   
 }
+
+.single-product-section .content{
+  display: flex;
+  margin-top: 2rem;
+}
+.single-product-section .content > div{
+  flex: 0 0 50%;
+  width: 50%;
+}
+
+.single-product-section .content > div:first-child{
+  padding-right: 4rem;
+}
+
+
+.product-gallery-slider{
+  border-radius: 1rem;
+  background-color: #74C7F1;
+}
+
+.product-slide {
+  position: relative;
+  padding-top: 100%;
+  
+  overflow: hidden;
+  
+}
+.product-slide img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  top: 0;
+}
+
+.single-product-section .content > div:last-child{
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.single-product-section .title{
+  font-family: 'MersadBlack';
+  font-size: 1.563rem;
+}
+
+.single-product-section .text{
+  margin-top: 1rem;
+}
+
+.horizontal-separator{
+  width: 100%;
+  height: 1px;
+  background-color: #E4E4E4;
+  margin: 2rem 0;
+}
+
+.subtitle{
+  font-weight: bold;
+}
+
+.specifications{
+  opacity: 0.4;
+  margin-top: 1rem;
+  line-height: 2;
+}

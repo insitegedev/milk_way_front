@@ -33,26 +33,13 @@ var swiper1 = new Swiper(".main-slider", {
 
 
 
-var swiper4 = new Swiper(".product-thumb-slider", {
-  direction: "vertical",
-  scrollbar: {
-        el: ".swiper-scrollbar",
-        hide: true,
-      },
-      watchSlidesProgress: true,
-      mousewheel: true,
-      slidesPerView: 3,
-      grabCursor: true,
-      spaceBetween: 30,
-});
 
 
-var swiper2 = new Swiper(".product-galery-slider", {
+
+var swiper2 = new Swiper(".product-gallery-slider", {
       
       grabCursor: true,
-      thumbs: {
-        swiper: swiper4,
-      },
+      
     });
 
 
