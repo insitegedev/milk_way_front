@@ -1265,3 +1265,47 @@ padding: 1rem;
   height: auto;
 }
 
+.news-section{
+  padding-bottom: 4rem;
+}
+
+.news-section .news-list{
+  margin-top: 2rem;
+}
+
+.news-content {
+    max-width: 635px;
+    margin: auto;
+}
+
+.news-content .date {
+    
+    margin-top: 2rem;
+    opacity: 0.4;
+}
+
+.news-content .img {
+    margin-top: 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.news-content .title {
+  font-family: 'MersadBlack';
+    font-size: 1.125rem;
+    
+    margin-top: 2rem;
+}
+
+.news-content .text {
+    margin-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.cke-image {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 1rem auto;
+}
+
