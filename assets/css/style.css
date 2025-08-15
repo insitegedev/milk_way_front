@@ -679,6 +679,7 @@ input, textarea {
 }
 
 .contact-form{
+  width: 100%;
   max-width: 444px;
 }
 .contact-form .title{
@@ -1216,5 +1217,51 @@ padding: 1rem;
   padding-bottom: 4rem;
   padding-top: 2rem;
   min-height: 400px;
+}
+
+.contact-section{
+  padding-bottom: 17%;
+}
+
+.contact-section .content{
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 2rem;
+}
+.contact-section .content > div:first-child{
+  padding-right: 1rem;
+  border-right: 1px solid #B0B5BB;
+}
+
+.contact-section .content > div:last-child{
+  padding-left: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact-section .content > div:last-child > div{
+  width: 100%;
+}
+
+.contact-section .contact-info{
+     
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+    justify-items: initial;
+}
+
+.contact-section .contact-form .title{
+  color: #0D1E33;
+}
+
+.contact-section .bg{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.contact-section .bg svg{
+  
+  width: 100%;
+  height: auto;
 }
 
