@@ -39,7 +39,17 @@ var swiper1 = new Swiper(".main-slider", {
 var swiper2 = new Swiper(".product-gallery-slider", {
       
       grabCursor: true,
-      
+      navigation: {
+        nextEl: ".slider-button-next",
+        prevEl: ".slider-button-prev",
+      },
+      pagination: {
+        el: ".slider-pagination",
+      },
+       keyboard: {
+        enabled: true,
+      },
+      loop: true,
     });
 
 

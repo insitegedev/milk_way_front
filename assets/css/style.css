@@ -923,7 +923,7 @@ padding: 1rem;
 }
 
 .gradient-background.product{
-  background-color: transparent;
+  background-color: #F7F7F7;
 }
 .gradient-background.product .gradient{
   display: none;
@@ -960,12 +960,16 @@ padding: 1rem;
 }
 
 .single-product-section .content > div:first-child{
-  padding-right: 4rem;
+  padding-right: 1rem;
 }
 
 
+.slider-container{
+  max-width: 635px;
+}
+
 .product-gallery-slider{
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   background-color: #74C7F1;
 }
 
@@ -980,12 +984,13 @@ padding: 1rem;
   position: absolute;
   width: 100%;
   height: 100%;
+  
   object-fit: contain;
   top: 0;
 }
 
 .single-product-section .content > div:last-child{
-  padding-left: 2rem;
+  padding-left: 1rem;
   display: flex;
   align-items: center;
 }
@@ -1014,4 +1019,64 @@ padding: 1rem;
   opacity: 0.4;
   margin-top: 1rem;
   line-height: 2;
+}
+
+.slider-button-next{
+  position: absolute;
+  right: 26px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 50;
+  cursor: pointer;
+}
+.slider-button-prev{
+  position: absolute;
+  left: 26px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 50;
+  cursor: pointer;
+}
+
+.slider-pagination{
+    position: absolute;
+    text-align: center;
+    transition: .3s opacity;
+    transform: translate3d(0,0,0);
+    z-index: 10;
+
+        
+}
+
+.slider-pagination .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 1rem;
+    
+}
+
+.slider-pagination .swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+    
+    background: #ffffff;
+    
+}
+
+.slider-pagination .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 7px;
+}
+
+.other-product-section{
+  margin-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.other-product-section .section-title{
+  font-family: 'MersadBlack';
+  font-size: 1.563rem;
+}
+
+.other-product-section .product-list{
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
 }
