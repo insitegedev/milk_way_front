@@ -19,15 +19,15 @@ var swiper1 = new Swiper(".main-slider", {
   parallax: true,
   fadeEffect: { crossFade: true },
   pagination: {
-    el: ".swiper-pagination-project",
+    el: ".main-slider-pagination",
 
   },
   navigation: {
-    nextEl: ".swiper-button-next-project",
-    prevEl: ".swiper-button-prev-project",
+    nextEl: ".main-slider-button-next",
+    prevEl: ".main-slider-button-prev",
   },
   //rewind: true,
-  loop:true
+  
 });
 
 
