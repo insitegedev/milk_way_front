@@ -324,6 +324,17 @@ top: 0;
   transform: translateY(-30%);
 }
 
+.white-btn{
+  background-color: #FCFCF4;
+  color: #00A5EF;
+  min-height: 71px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s;
+  font-weight: bold;
+  min-width: 319px;
+}
+
 
 
 .section{
@@ -595,6 +606,11 @@ margin-top: 3rem;
   padding-top: 4rem;
 }
 
+.home-about-section .btn-container{
+  justify-items: end;
+margin-top: 0;
+}
+
 .home-about-section .bg-wrapper{
   position: relative;
   padding-top: 17%;
@@ -674,7 +690,7 @@ margin-top: 3rem;
 .about-tab-section .text{
   
   text-align: right;
-  padding: 1rem 0;
+  padding: 2rem 0;
   
 }
 
