@@ -370,6 +370,26 @@ top: 0;
   overflow: hidden;
 }
 
+
+.main-slider-section .bg-wrapper{
+  position: relative;
+  padding-top: 31%;
+}
+
+.main-slider-section .bg-wrapper > div{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.main-slider-section .bg-container{
+  max-width: 1920px;
+  margin: auto;
+  position: relative;
+  height: 100%;
+}
+
 .main-slider-section .background{
   position: absolute;
   width: 100%;
@@ -387,28 +407,41 @@ top: 0;
 
 .main-slider-section .background > div img{
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
   
 }
 
+
 .main-slider-section .background > div:first-child img{
+  position: absolute;
+  top: 0;
+  mix-blend-mode:screen;
+  transform: scale(1.213);
   
-  mix-blend-mode:screen
 }
 
 .main-slider-section .background.over{
   z-index: 2;
 }
-.main-slider-section .background.over > div:last-child img{
-  position: absolute;
-  width: 59%;
-  padding-top: 26%;
-  left: 28%;
+.main-slider-section .background.over > div:last-child img {
+    position: absolute;
+    width: 55%;
+    padding-top: 14%;
+    left: 30%;
+    height: 100%;
+    object-fit: contain;
 }
 
+.main-slider-section .container{
+  height: 100%;
+}
 
 .main-slider-container{
-  position: relative;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .main-slider-over-container{
@@ -479,10 +512,12 @@ top: 0;
 
 .main-slider{
   overflow: initial;
+  height: 100%;
 }
 
 .main-slide {
   display: flex;
+  height: 100%;
 }
 .main-slide > div {
   flex: 0 0 50%;
@@ -495,6 +530,12 @@ top: 0;
   align-items: center;
 }
 
+.main-slide .left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .main-slide .title{
   font-family: 'MersadBlack';
   font-size: 3.75rem;
@@ -505,7 +546,17 @@ top: 0;
 }
 
 .main-slide .img{
-  
+  height: 100%;
+  width: 100%;
+}
+.main-slide .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translateX(60%);
 }
 
 .small-title {
@@ -1516,3 +1567,12 @@ padding: 1rem;
   opacity: 1;
 }
 
+
+
+@media (min-width: 1920px) {  
+  .main-slider-section .bg-wrapper {
+    position: relative;
+    padding-top: 0;
+    height: 595px;
+  }
+}
