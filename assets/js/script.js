@@ -63,7 +63,29 @@ var swiper2 = new Swiper(".product-gallery-slider", {
 //SimpleScrollbar.initEl(el);
 
 $(document).ready(function(){
-    
 
+
+  function setOnResize(){
+    if ($(window).width() >= 1484){
+     const element = document.querySelector('.main-slider-section .container');
+        const rect = element.getBoundingClientRect();
+         const element2 = document.querySelector('.main-slider-section .bg-container');
+        const rect2 = element2.getBoundingClientRect();
+        let r = rect.right;
+        let r2 = rect2.right;
+        
+      
+            $('.main-slide .img img').css('transform',`translateX(calc(50% + ${(r2 - r)/2}px))`);
+      } else{
+        $('.main-slide .img img').css('transform',`translateX(50%)`);
+      }
+  }
+    
+$(window).on('resize', debounce(function(e){
+        setOnResize()
+
+    }));
+
+    setOnResize()
       
 });

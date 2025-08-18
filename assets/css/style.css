@@ -408,6 +408,8 @@ top: 0;
 .main-slider-section .background > div img{
   width: 100%;
   height: 100%;
+  position: absolute;
+  top: 0;
   object-fit: contain;
   
 }
@@ -417,7 +419,7 @@ top: 0;
   position: absolute;
   top: 0;
   mix-blend-mode:screen;
-  transform: scale(1.213);
+  transform: scale(1.2);
   
 }
 
@@ -539,10 +541,12 @@ top: 0;
 .main-slide .title{
   font-family: 'MersadBlack';
   font-size: 3.75rem;
+  font-size: 3.75rem;
 }
 
 .main-slide .text{
   padding: 2rem 0;
+  max-width: 557px;
 }
 
 .main-slide .img{
@@ -554,9 +558,9 @@ top: 0;
   width: 100%;
   object-fit: contain;
   position: absolute;
-  top: 0;
+  bottom: 0;
   right: 50%;
-  transform: translateX(60%);
+  transform: translateX(50%);
 }
 
 .small-title {
@@ -934,7 +938,7 @@ input, textarea {
 }
 .news-item .img{
   padding-top: 70%;
-  
+  border-radius: 1rem;
 }
 
 
@@ -1566,6 +1570,8 @@ padding: 1rem;
 .gallery .img:hover .gallery-hover{
   opacity: 1;
 }
+
+
 
 
 
